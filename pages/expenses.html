@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - Farm Friend</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Same navbar as index.html -->
+    </nav>
+
+    <main class="expenses-main">
+        <div class="expense-tracker">
+            <h2 class="section-title">Farm Expense Tracker</h2>
+            <div class="tracker-container">
+                <div class="crop-selector">
+                    <select id="crop-select" class="form-control">
+                        <option value="wheat">Wheat</option>
+                        <option value="cotton">Cotton</option>
+                        <option value="sugarcane">Sugarcane</option>
+                    </select>
+                </div>
+
+                <div class="add-expense">
+                    <input type="text" placeholder="Item name" id="expense-item">
+                    <input type="number" placeholder="Cost" id="expense-cost">
+                    <button class="add-btn">Add Expense</button>
+                </div>
+
+                <div class="expense-list">
+                    <h3>Recent Expenses</h3>
+                    <table id="expense-table">
+                        <!-- Table content populated by JS -->
+                    </table>
+                </div>
+
+                <div class="total-expenses">
+                    <h4>Total for <span id="selected-crop">Wheat</span>:</h4>
+                    <div class="total-amount">₹0.00</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Same footer as index.html -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

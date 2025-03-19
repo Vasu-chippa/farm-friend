@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Profile - Farm Friend</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Same navbar as index.html -->
+    </nav>
+
+    <main class="profile-main">
+        <div class="profile-container">
+            <div class="profile-header">
+                <h2 class="section-title">Farm Profile</h2>
+                <button class="edit-profile">Edit Profile</button>
+            </div>
+
+            <div class="crop-selection">
+                <h3>Select Your Crops</h3>
+                <div class="crop-options">
+                    <label class="crop-option">
+                        <input type="checkbox" name="crop" value="wheat">
+                        🌾 Wheat
+                    </label>
+                    <label class="crop-option">
+                        <input type="checkbox" name="crop" value="rice">
+                        🌾 Rice
+                    </label>
+                    <label class="crop-option">
+                        <input type="checkbox" name="crop" value="cotton">
+                        🧵 Cotton
+                    </label>
+                </div>
+            </div>
+
+            <div class="farm-details">
+                <div class="detail-card">
+                    <h4>Farm Size (Acres)</h4>
+                    <input type="number" class="form-control" value="5">
+                </div>
+                <div class="detail-card">
+                    <h4>Irrigation Type</h4>
+                    <select class="form-control">
+                        <option>Drip Irrigation</option>
+                        <option>Flood Irrigation</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Same footer as index.html -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
